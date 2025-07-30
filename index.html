@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1,2 html</title>
+     <style>
+    table, th, td {
+      border: 2px solid black; 
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <fieldset>
+        <legend>Novel Services Login</legend>
+
+        <form method="post">
+
+            <div>
+                <label for="user">User Name</label>
+                <input id="user" type="text" required>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" required>
+            </div>
+
+            <div>
+                <label for="address">City of employment</label>
+                <input id="address" type="text" required>
+            </div>
+
+            <div>
+                <label for="server">Web Server</label>
+                <select id="server" required>
+                    <option value="">Select Server</option>
+                    <option value="Apache">Apache</option>
+                    <option value="Nginx">Nginx</option>
+                    <option value="IIS">IIS</option>
+                </select>
+            </div>
+
+            <h3>Please specify Your role:</h3>
+
+            <div>
+                <input id="admin" type="radio" value="admin" name="role">
+                <label for="admin">Admin</label>
+            </div>
+
+            <div>
+                <input id="engineer" type="radio" value="engineer" name="role">
+                <label for="engineer">Engineer</label>
+            </div>
+
+            <div>
+                <input id="manager" type="radio" value="manager" name="role">
+                <label for="manager">Manager</label>
+            </div>
+
+            <div>
+                <input id="guest" type="radio" value="guest" name="role">
+                <label for="guest">Guest</label>
+            </div>
+
+            <h3>Single sign-on to the following:</h3>
+
+            <div>
+                <input id="mail" type="checkbox" value="mail" name="services">
+                <label for="mail">Mail</label>
+            </div>
+
+            <div>
+                <input id="payroll" type="checkbox" value="payroll" name="services">
+                <label for="payroll">Payroll</label>
+            </div>
+
+            <div>
+                <input id="service" type="checkbox" value="service" name="services">
+                <label for="service">Self-services</label>
+            </div>
+
+            <div>
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+    </fieldset>
+
+</body>
+</html>
